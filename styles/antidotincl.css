@@ -1,0 +1,75 @@
+
+@font-face {
+  font-family: 'ClanOT-Book';
+  src: url('../fonts/ClanOT-Book.eot?#iefix') format('embedded-opentype'),  url('../fonts/ClanOT-Book.otf')  format('opentype'),
+	     url('ClanOT-Book.woff') format('woff'), url('../fonts/ClanOT-Book.ttf')  format('truetype'), url('../fonts/ClanOT-Book.svg#ClanOT-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClanOT-Bold';
+  src: url('../fonts/ClanOT-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/ClanOT-Bold.otf')  format('opentype'),
+	     url('../fonts/ClanOT-Bold.woff') format('woff'), url('../fonts/ClanOT-Bold.ttf')  format('truetype'), url('../fonts/ClanOT-Bold.svg#ClanOT-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.last-char {
+  letter-spacing: normal;
+}
+
+.infos {
+  margin-top: 25vh;
+	text-align: right;
+  right: 0px;
+  margin-right: 60px;
+}
+
+.name {
+  color: #3e3e40;
+  font-family: 'ClanOT-Book';
+  padding-bottom: 15px;
+  font-size: 25px;
+  letter-spacing: 0.3em;
+}
+
+.title {
+  color: #707173;
+  font-family: 'ClanOT-Book';
+  padding-bottom: 60px;
+  font-size: 25px;
+  letter-spacing: 0.3em;
+}
+
+.address, .address a, .address a:hover {
+  color: #707173;
+  font-family: 'ClanOT-Book';
+  padding-bottom: 13px;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+.link, .link a, .link a:hover {
+  color: #707173;
+  font-family: 'ClanOT-Book';
+  margin-top: 40px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+.address a:hover, .link a:hover {
+  color: #20396b;
+}
+
+.link .arrow {
+  font-size: 150%;
+}
+
+A
+A
+A
+
