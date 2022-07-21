@@ -47,6 +47,7 @@
   margin-right: 10vw;
   order: 2;
   margin-left: 5vw;
+  max-width: 30vw;
 }
 
 .infos .name {
@@ -71,7 +72,6 @@
 
 .infos .address, 
 .infos .address a, 
-.infos .address a:hover,
 .infos .konto,
 .infos .impressum {
   color: #707173;
@@ -82,7 +82,7 @@
 }
 
 .link, .link a, .link a:hover {
-  color: #707173;
+  color:  #bd0926;
   margin-top: 40px;
   padding-bottom: 10px;
   font-size: 14px;
@@ -106,6 +106,7 @@
   margin-left: 10vw;
   display: flex;
   flex-direction: column;
+  margin-bottom: 250px;
 }
 
 .issue-list .issue {
