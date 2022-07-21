@@ -15,36 +15,66 @@
   font-style: normal;
 }
 
+.antidot {
+  font-family: 'ClanOT-Book';
+  display: flex;
+  justify-content: space-between;
+}
+
+.antidot .bg {
+  background: linear-gradient(127deg, rgba(209, 0, 0, 0.411), rgba(0,255,0,0) 70.71%);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  /* z-index usage is up to you.. although there is no need of using it because the default stack context will work. */
+  z-index: -1;
+}
+
 .last-char {
   letter-spacing: normal;
 }
 
 .infos {
+  align-self: flex-start;
+  position: sticky;
+  top: 0;
   margin-top: 25vh;
 	text-align: right;
-  right: 0px;
-  margin-right: 60px;
+  margin-right: 10vw;
+  order: 2;
+  margin-left: 5vw;
 }
 
-.name {
+.infos .name {
   color: #3e3e40;
-  font-family: 'ClanOT-Book';
   padding-bottom: 15px;
   font-size: 25px;
   letter-spacing: 0.3em;
 }
 
-.title {
+.infos .title {
   color: #707173;
-  font-family: 'ClanOT-Book';
   padding-bottom: 60px;
   font-size: 25px;
   letter-spacing: 0.3em;
+  margin-top: 15px;
 }
 
-.address, .address a, .address a:hover {
+.infos .impressum span {
+  display: block;
+  padding-bottom: 3px;
+}
+
+.infos .address, 
+.infos .address a, 
+.infos .address a:hover,
+.infos .konto,
+.infos .impressum {
   color: #707173;
-  font-family: 'ClanOT-Book';
   padding-bottom: 13px;
   font-size: 15px;
   letter-spacing: 0.1em;
@@ -53,7 +83,6 @@
 
 .link, .link a, .link a:hover {
   color: #707173;
-  font-family: 'ClanOT-Book';
   margin-top: 40px;
   padding-bottom: 10px;
   font-size: 14px;
@@ -62,14 +91,83 @@
 }
 
 .address a:hover, .link a:hover {
-  color: #20396b;
+  color: #bd0926;
 }
 
 .link .arrow {
   font-size: 150%;
 }
 
-A
-A
-A
+.issue-list {
+  order: 1;
+  margin-top: 8vh;
+	text-align: left;
+  left: 0px;
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: column;
+}
 
+.issue-list .issue {
+  margin-bottom: 25px;
+  height: 300px;
+  display: grid;
+  justify-items: start;
+  grid-template-columns: [cover] 355px [info] 50px [date] auto;
+  grid-template-rows: [nbr-date] 160px [title] 107px [abstract] auto;
+}
+
+.issue-list .issue:nth-child(odd) {
+  margin-left: 0px;
+
+}
+
+.issue-list .issue:nth-child(even) {
+  margin-left: 40px;
+}
+
+.issue-list .issue .issue-nbr {
+  font-family: monospace;
+  color: #707173;
+  margin-bottom: 11px;
+  font-size: 24px;
+  align-self: end;
+}
+
+.issue-list .issue .issue-nbr::before{
+  content: 'Nr.';
+}
+
+.issue-list .issue .date {
+  color: #707173;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  align-self: end;
+}
+
+.issue-list .issue .title {
+  font-size: 25px;
+  letter-spacing: 0.1em;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  grid-column-start: info;
+  grid-column-end: date-end;
+}
+
+.issue-list .issue .abstract {
+  font-size: 15px;
+  grid-column-start: info;
+  grid-column-end: date-end;
+}
+
+.issue-list .issue .cover {
+  grid-row-start: nbr-date;
+  grid-row-end: abstract;
+}
+
+.issue-list .issue .cover img {
+  border-width: 1px;
+  border-color: #ccc;
+  border-style: solid;
+  box-shadow: 10px 20px 15px silver;
+}
